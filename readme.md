@@ -36,7 +36,7 @@ To use trainer.py, run it from the command line with the desired action and opti
 `python trainer.py run`
 
 - To perform a sneak action:
-`python trainer.py sneak --keystrokes 200 --delay 1.5`
+`python trainer.py sneak`
 
 Remember to follow the game's terms of service and any community guidelines while using scripts for skill training.
 
