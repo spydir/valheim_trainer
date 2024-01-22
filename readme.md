@@ -2,6 +2,8 @@
 
 This Python script is designed to assist players in training their skills within the popular video game Valheim, which can be found on [Steam](https://store.steampowered.com/app/892970/Valheim/). The script utilizes the `pydirectinput` library and Windows API calls to automate key presses within the Valheim game window.
 
+*Note: This is a proof of concept and a bit of a "template" that can be modified to fit other games in the future. If you're looking for a speed-run to 100 in all skills, just use the devcommands. 
+
 ## Prerequisites
 
 Before using this script, ensure you have the following:
