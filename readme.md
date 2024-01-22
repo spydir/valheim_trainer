@@ -13,27 +13,30 @@ Before using this script, ensure you have the following:
   ```
 - Valheim installed and running on your Windows PC.
 
-## Usage
+## In Game Setup
 
+To get the best out of this training script, you need to build a two-square training room. Make sure it's in a safe location and that you have good fortifications or you'll wake up to a pile of rubble and no bed to respawn to. This two, square training room will help with Jump, Run, and Sneak.
+![alt text](https://github.com/spydir/valheim_trainer/blob/main/screenshots/training_room.png)
+
+## Usage
 1. Launch Valheim and enter the game.
 2. Make sure the Valheim game window is active and visible.
-3. Open the Python script in your preferred code editor or IDE.
-4. Customize the following parameters within the script according to your specific skill training requirements:
-
-   - `window_title`: Set this to match the title of your Valheim game window.
-   - `delay_between_keypresses`: Adjust the delay (in seconds) between each keypress to control the rate of skill training.
-   - `keystroke_to_send`: Define the key you want to send to the game. By default, it's set to "space" for jumping.
-   - `num_keystrokes`: Specify the number of times you want to send the keystroke.
-
-5. Save your changes.
-
-6. Run the script. It will focus on the Valheim window, wait for a moment to ensure proper focus, and then start sending the designated keystroke repeatedly for the specified number of times.
-
-7. Monitor the game to observe the skill training progress.
+3. Enter your training room and close the door. This will keep your character contained.
+4. Open the `trainer.py` script in your preferred code editor or IDE.
+5. Follow the example usage from below.
+6. Monitor the game to observe the skill training progress.
 
 ## Example Usage
+To use trainer.py, run it from the command line with the desired action and optional parameters. Here are some examples:
 
-The provided script is set to repeatedly press the spacebar (default) in Valheim for 10,000 times with a delay of 2.8 seconds between each press. You can modify the script to train other skills or use different keys as needed.
+- To perform a jump action:
+`python trainer.py jump`
+
+- To perform a run action:
+`python trainer.py run`
+
+- To perform a sneak action:
+`python trainer.py sneak --keystrokes 200 --delay 1.5`
 
 Remember to follow the game's terms of service and any community guidelines while using scripts for skill training.
 
