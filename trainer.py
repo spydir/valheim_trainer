@@ -22,9 +22,12 @@ if __name__ == "__main__":
         keypress.send_keystrokes(window_title, "space", 3, 2.8)
     
     elif args.action == "run":
-        keypress.send_keystrokes(window_title, "w", 3, 10)
-        run_keypress_script("w", 3, 10)
+        keypress.send_keydown2(window_title,"shift")
+        keypress.send_keydown(window_title,"w", 6.5, 10, 6.5)
+        keypress.send_keyup(window_title, "shift")
+      
 
     elif args.action == "sneak":
         keypress.send_keystrokes(window_title, "ctrl", 1, 1)
-        keypress.send_keystrokes(window_title, "w", 3, 10)
+        keypress.send_keydown(window_title,"w", 12, 3, 6.5)
+        keypress.send_keystrokes(window_title, "ctrl", 1, 1)
